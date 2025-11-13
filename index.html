@@ -1,0 +1,222 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<SmokeyCursor />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhishek's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!--<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" href="styles.css"/>-->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Previous heading font (kept for reference): Permanent Marker -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> -->
+
+</head>
+<body>
+  
+  <header class="topbar">
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <!--<button class="theme-toggle theme-toggle--corner" aria-label="Toggle theme" title="Toggle light/dark">☼</button>-->
+    
+    <nav class="nav" id="site-nav">
+      <a href="#projects">Projects</a>
+      <a href="#learn">Learn</a>
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-switch theme-switch--corner" aria-label="Toggle theme" title="Toggle light/dark">
+      <button class="theme-switch__btn" data-mode="light" aria-label="Light mode">☼</button>
+      <button class="theme-switch__btn" data-mode="dark" aria-label="Dark mode">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Section 1) -->
+ 
+    <section class="section section--alt">
+      <div class="container--plain">
+        <div class="hero">
+          <div class="hero__copy">
+
+            <h1>Hey there.<br/>I'm Abhishek.</h1>
+            <p>I turn messy data into simple, actionable insights. Mostly I work with Python, SQL, and visualization tools to tell stories that actually make sense.</p>
+            <div class="cta-row">
+              <a class="btn" href="resume.pdf" target="_blank">Download my resume</a>
+              <a class="btn btn--ghost" href="#projects">Check out projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Midline navigation sitting between sections -->
+    <div class="midnav">
+      <div class="midnav__row">
+        <a class="midbtn" href="#projects">Projects</a>
+        <a class="midbtn" href="#about">About me</a>
+        <a class="midbtn" href="#certifications">Certifications</a>
+        <a class="midbtn" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Projects Section (Section 3) -->
+    <section id="projects" class="section section--no-border-top">
+      <div class="container--plain">
+        <div class="section__header">
+          <h2 class="section__title">Projects</h2>
+        </div>
+        <div class="projects" id="project-cards">
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-08-01-project.html</span>
+            </div>
+            <!--<img class="thumb" src="https://picsum.photos/800/450?image=10" alt="Project thumbnail" loading="lazy" width="800" height="450" />-->
+            <div class="project-slider">
+              <div class="slider-images">
+                <img src="https://picsum.photos/800/450?random=101" alt="Project image 1" class="slider-img active" />
+                <img src="https://picsum.photos/800/450?random=102" alt="Project image 2" class="slider-img" />
+                <img src="https://picsum.photos/800/450?random=103" alt="Project image 3" class="slider-img" />
+              </div>
+              <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                +
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Personalized News Portal</h3>
+              <p class="project-meta">Flask · Python · SQL · i18n</p>
+              <p>Users pick topics and get tailored news with translations and auto summaries.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-07-14-project.html</span>
+            </div>
+            <img class="thumb" src="https://picsum.photos/800/450?image=20" alt="Project thumbnail" loading="lazy" width="800" height="450" />
+            <div class="project-body">
+              <h3 class="project-title">Bangalore Home Prices Analysis</h3>
+              <p class="project-meta">Pandas · scikit-learn · Regression</p>
+              <p>Cleaned data, handled outliers, and built a model to predict home prices.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-07-01-project.html</span>
+            </div>
+            <img class="thumb" src="https://picsum.photos/800/450?image=40" alt="Project thumbnail" loading="lazy" width="800" height="450" />
+            <div class="project-body">
+              <h3 class="project-title">Customer Churn Predictor</h3>
+              <p class="project-meta">scikit-learn · EDA · Metrics</p>
+              <p>Built a baseline model and feature pipeline to predict subscription churn.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section 2 (same height) -->
+    <section id="projects-2" class="section section--alt">
+      <div class="container--plain">
+        <div class="projects">
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-06-30-project.html</span>
+            </div>
+            <img class="thumb" src="https://picsum.photos/800/450?image=30" alt="Project thumbnail" loading="lazy" width="800" height="450" />
+            <div class="project-body">
+              <h3 class="project-title">Olympics Data Dashboard</h3>
+              <p class="project-meta">Power BI · DAX · Visualization</p>
+              <p>Interactive dashboards analyzing medal trends, athlete performance, and countries.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-05-20-project.html</span>
+            </div>
+            <img class="thumb" src="https://picsum.photos/800/450?image=50" alt="Project thumbnail" loading="lazy" width="800" height="450" />
+            <div class="project-body">
+              <h3 class="project-title">Sales Forecasting</h3>
+              <p class="project-meta">Time series · Prophet</p>
+              <p>Monthly sales forecasting with cross-validation and interpretable components.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+
+          <article class="project-window">
+            <div class="project-window__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="project-window__title">2024-04-10-project.html</span>
+            </div>
+            <img class="thumb" src="https://picsum.photos/800/450?image=60" alt="Project thumbnail" loading="lazy" width="800" height="450" />
+            <div class="project-body">
+              <h3 class="project-title">Tweet Sentiment Analyzer</h3>
+              <p class="project-meta">NLP · scikit-learn</p>
+              <p>Built a simple classifier with vectorization and evaluated with ROC-AUC.</p>
+              <div class="project-actions"><a class="btn btn--ghost" href="#" target="_blank">View project</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Section 4) -->
+    <section id="about" class="section">
+      <div class="container--plain">
+        <div class="section__header">
+          <h2 class="section__title">About me</h2>
+        </div>
+        <p>I'm a curious learner exploring data analysis and machine learning. I love building things that make numbers tell a story. Tools I use: Python, Pandas, SQL, scikit-learn, Power BI/Tableau. I enjoy A/B testing, forecasting, and e-commerce analytics.</p>
+      </div>
+    </section>
+
+    <!-- Certifications Section (Section 5 alt) -->
+    <section id="certifications" class="section section--alt">
+      <div class="container--plain">
+        <div class="section__header">
+          <h2 class="section__title">Certifications</h2>
+        </div>
+        <ul>
+          <li>Google Data Analytics Certificate</li>
+          <li>Power BI Essential Training</li>
+          <li>Python for Data Science (Coursera)</li>
+          <!-- Add more certifications here -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section (kept as-is) -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: abhishekaute2002@gmail.com</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/abhishek-aute/" target="_blank">linkedin.com/in/abhishek-a</a></li>
+        <li>GitHub: <a href="https://github.com/Abhi2820" target="_blank">github.com/abhishek-a</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">© Abhishek — My Data Notebook</footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
