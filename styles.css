@@ -383,6 +383,11 @@ nav a:hover::after {
   display: block;
   object-fit: cover;
 }
+.thumb--wide {
+  object-fit: contain;
+  background-color: var(--surface-2);
+}
+
 
 .project-body {
   padding: 14px;
