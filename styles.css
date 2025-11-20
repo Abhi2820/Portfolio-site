@@ -290,6 +290,7 @@ nav a:hover::after {
   background: transparent;
   color: var(--ink);
   border-color: var(--border);
+
 }
 
 /* Quick links row */
@@ -348,6 +349,7 @@ nav a:hover::after {
   background: var(--card);
 }
 
+
 .project-window:hover {
   transform: translate(-4px, -4px);
   box-shadow: 7px 7px 0 var(--border);
@@ -389,9 +391,7 @@ nav a:hover::after {
 }
 
 
-.project-body {
-  padding: 14px;
-}
+
 
 a.project-title {
   margin: 4px 0 6px;
@@ -407,9 +407,9 @@ a.project-title {
 .project-body { display: flex; flex-direction: column; min-height: 280px; }
 .project-body p { flex-grow: 1; }
 
-.project-actions {
-  margin-top: 10px;
-}
+
+
+
 
 .project-actions .btn,
 .projects .btn {
@@ -637,3 +637,34 @@ a:focus-visible, button:focus-visible {
   .theme-switch__btn { padding: 2px 8px; font-size: 0.98rem; }
 }
 
+/* parent container must be relative */
+.project-window {
+  position: relative;
+  padding-bottom: 60px; /* create space for the button */
+}
+
+/* position the action button centered & above the bottom */
+.project-actions {
+  position: absolute;
+  bottom: 20px;          /* distance above card boundary */
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  margin: 0;
+}
+
+/* override btn--ghost absolute from global CSS */
+.project-actions .btn--ghost {
+  position: static !important;
+  background: transparent;
+  border-color: var(--border);
+  padding: 10px 16px;
+}
+.project-window {
+  position: relative;
+  padding: 14px;        /* adds spacing on all sides */
+  padding-top: 0;       /* keep the top bar flush */
+  border: 2px solid var(--border);
+  background: var(--card);
+  padding-bottom: 60px;
+}
